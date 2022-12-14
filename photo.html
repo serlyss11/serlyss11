@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>ALBUM SERLY</b></h1>
+  
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">beberapa foto saya bersama teman teman</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="./WhatsApp Image 2022-11-09 at 11.00.13.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.42.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.45.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.47.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.52.jpeg" style="width:100%">
+	<img src="./WhatsApp Image 2022-11-21 at 21.16.14.jpeg" style="width:100%">
+	<img src="./WhatsApp Image 2022-11-21 at 21.17.17.jpeg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.54.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-10-29 at 14.34.28.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-09 at 08.10.15.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-09 at 10.44.00.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-09 at 10.51.16.jpeg" style="width:100%">
+	
+  </div>
+
+  <div class="w3-third">
+    <img src="./WhatsApp Image 2022-11-21 at 20.47.55.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.53.55.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.53.59.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.54.01.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.54.06.jpeg" style="width:100%">
+    <img src="./WhatsApp Image 2022-11-21 at 20.54.08.jpeg" style="width:100%">
+	
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
